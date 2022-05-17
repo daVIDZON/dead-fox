@@ -368,6 +368,7 @@ main {
 .pre-about-us {
     display: flex;
     width: 100%;
+    padding-bottom: 110px;
     height: 100%;
     flex-wrap: wrap;
     align-items: center;
@@ -426,16 +427,21 @@ main {
 .block-pre-about-us-2 {
     display: flex;
     width: 672px;
-  margin-top: 50px;
+    margin-top: 50px;
     justify-content: flex-end;
 }
-
+.img-pre-about{
+    width: 100%;
+}
 .about-us {
     display: flex;
     background-color: rgb(9 9 9);
     width: 100%;
+    padding-bottom: 110px;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 .about-us-img {
     width: 630px;
     height: 400px;
@@ -502,6 +508,7 @@ main {
 }
 
 .our-team-wrapper {
+    padding-bottom: 110px;
     width: 82%;
     height: 80%;
     margin: 0 auto;
@@ -604,32 +611,54 @@ main {
 
 footer {
     display: flex;
-    border-top:2px solid rgb(177, 177, 177);
+    border-top: 2px solid rgb(177, 177, 177);
     width: 100%;
     height: 20%;
     background-color: rgb(19, 19, 19);
 }
-.footer-block-center{
-width:80%;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-align-items:center;
-flex-direction: column;
+
+.footer-block-center {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.footer-text{
+
+.footer-text {
     margin-top: 35px;
     letter-spacing: 1.4px;
     color: rgb(255, 255, 255);
 }
-.social-block-footer{
+
+.social-block-footer {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
 }
-.block-social-networks{
+
+.block-social-networks {
     display: flex;
-    width:25%;
-justify-content: center;
+    width: 25%;
+    justify-content: center;
 }
+
+/* For Mobile */
+@media only screen and (max-width: 768px) {
+    .main-header {
+        display: none;
+    }
+
+    .about-us-img {
+        width: 80%;
+        object-fit: contain;
+        height: 400px;
+    }
+    .content-bg {
+    }
+}
+/* For Tablet */
+
+/* For Desctop */
