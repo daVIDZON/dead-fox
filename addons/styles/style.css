@@ -695,7 +695,10 @@ footer {
 .main-text-bg{
     font-size:58px;
 }
-
+.colections-icons{
+    width: 400px;
+    height: 550px;
+}
 }
 /* For Desctop */
 @media only screen and (min-width: 1500px) {
@@ -712,5 +715,22 @@ footer {
     .colections-icons{
         width: 500px;
         height: 600px;
+    }
+    .text-pre-about-us {
+        color: hsl(243, 79%, 85%);
+        font-size: 65px;
+    }
+    .block-pre-about-us-1 {
+        width: 40%;
+    }
+    .block-pre-about-us-2 {
+      width: 50%;
+    }
+    .tittle-pre-about-us {
+        font-size: 95px;
+    }
+    .colection-text{
+        font-size: 40px;
+        border-radius:35px;
     }
 }
