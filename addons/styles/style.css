@@ -703,6 +703,7 @@ footer {
 
 /* For Tablet */
 @media only screen and (min-width: 770px) {
+    @supports (-webkit-appearance:none) {
     .main-text-bg{
         font-size:55px;
     }
@@ -713,6 +714,7 @@ footer {
     .bg-block-text {
        
     }
+}
 }
 /* For Laptop */
 @media only screen and (min-width: 1200px) {
