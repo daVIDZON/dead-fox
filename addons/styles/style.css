@@ -42,6 +42,7 @@ header {
 
 .Red-text {
     color: rgb(208, 93, 93);
+    margin-left: 7px;
 }
 
 .logo-header {
@@ -230,13 +231,15 @@ main {
     background:rgba(9,9,9,1);
     height: 11%;
     width: 100%;
-    display: block;
+    display: flex;
 }
 
 .tittle-all {
+    display: flex;
     font-size: 35px;
     margin-left: 65px;
     padding-top: 20px;
+    width:100%;
     color: rgb(231, 231, 231);
 }
 
@@ -262,7 +265,6 @@ main {
     width: 300px;
     height: 400px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-self: center;
     margin-right: 20px;
@@ -653,8 +655,16 @@ footer {
 
 /* For Mobile */
 @media only screen and (max-width: 768px) {
+    .colections-icons{
+        margin-right: 0;
+    }
+    .invisiable-block_2{
+        background-color: #9829dd;
+        transform: translateY(-120px);
+    }
     .tittle-all{
-        text-align: center;
+        width: 75%;
+        margin:0 auto;
     }
     .main-header {
         display: none;
