@@ -161,12 +161,11 @@ main {
 
 .content-bg {
     width: 100%;
-    height: 475px;
+    height: 800px;
     background-color: black;
     background-image: url(../img/photo_2022-05-17_17-47-18.jpg);
     background-size: cover;
     overflow: hidden;
-    position: relative;
 }
 
 .main-banner-img {
@@ -176,29 +175,32 @@ main {
 
 .bg-block-text {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
+.block_typewriter{
+    width: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main-text-bg {
-    width: 100%;
+    display: flex;
     border-right: 2px solid rgba(255, 255, 255, .75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     font-size: 80px;
-    color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-image: radial-gradient(circle, rgba(9,9,9,1) 0%, rgba(246,0,0,1) 52%, rgba(9,9,9,1) 100%);
-    margin-top: 300px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
 }
 
 .anim-typewriter {
-    animation: typewriter 3s steps(44) 1s 1 normal both,
+    animation: typewriter 2.1s steps(44) 1s 1 normal both,
         blinkTextCursor 500ms steps(44);
 
 }
@@ -348,7 +350,6 @@ main {
     height: 100px;
     display: flex;
     justify-content: center;
-    margin-bottom: 250px;
 }
 
 .learn-more-text {
@@ -434,9 +435,11 @@ main {
     margin-top: 50px;
     justify-content: flex-end;
 }
-.img-pre-about{
+
+.img-pre-about {
     width: 100%;
 }
+
 .about-us {
     display: flex;
     background-color: rgb(9 9 9);
@@ -659,19 +662,48 @@ footer {
         object-fit: contain;
         height: 400px;
     }
+
     .content-bg {
+        width:100%;
+        height:200px;
     }
-    .about-us-img{
-        display:none;
+.main-text-bg{
+    font-size:40px;
+}
+    .about-us-img {
+        display: none;
     }
-    .about-us-main-text{
+
+    .about-us-main-text {
         margin-left: 0;
-        width:70%;
+        width: 70%;
     }
+
     .text-about-us {
         font-size: 14px;
     }
 }
-/* For Tablet */
 
+/* For Tablet */
+@media only screen and (min-width: 770px) {
+    .main-text-bg{
+        font-size:55px;
+    }
+}
+/* For Laptop */
+@media only screen and (min-width: 1200px) {
+.main-text-bg{
+    font-size:58px;
+}
+
+}
 /* For Desctop */
+@media only screen and (min-width: 1500px) {
+    .content-bg {
+        height: 100%;
+        width: 100%;
+    }
+    .header-menu-text {
+      font-size: 30px;
+    }
+}
