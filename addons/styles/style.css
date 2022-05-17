@@ -706,4 +706,11 @@ footer {
     .header-menu-text {
       font-size: 30px;
     }
+    .main-colection-wrapper {
+        width: 100%;
+    }
+    .colection-icons{
+        width: 500px;
+        height: 600px;
+    }
 }
