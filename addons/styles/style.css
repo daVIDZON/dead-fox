@@ -689,9 +689,20 @@ footer {
     .main-text-bg{
         font-size:55px;
     }
+    .content-bg {
+        width: 100%;
+        height: 500px;
+    }
+    .bg-block-text {
+        height: 100%;
+    }
 }
 /* For Laptop */
 @media only screen and (min-width: 1200px) {
+    .content-bg {
+        width: 100%;
+        height:500px;
+    }
 .main-text-bg{
     font-size:58px;
 }
@@ -703,11 +714,12 @@ footer {
 /* For Desctop */
 @media only screen and (min-width: 1500px) {
     .content-bg {
-        height: 100%;
         width: 100%;
+        height:600px;
+        background-image: c;
     }
     .header-menu-text {
-      font-size: 30px;
+      font-size: 50px;
     }
     .main-colection-wrapper {
         width: 100%;
@@ -721,10 +733,10 @@ footer {
         font-size: 65px;
     }
     .block-pre-about-us-1 {
-        width: 40%;
+        width: 60%;
     }
     .block-pre-about-us-2 {
-      width: 50%;
+      width: 40%;
     }
     .tittle-pre-about-us {
         font-size: 95px;
@@ -732,5 +744,11 @@ footer {
     .colection-text{
         font-size: 40px;
         border-radius:35px;
+    }
+}
+@media only screen and (min-width: 2300px) {
+    .content-bg {
+        width: 100%;
+       height: 900px;
     }
 }
