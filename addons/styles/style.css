@@ -666,9 +666,9 @@ footer {
         transform: translateY(-120px);
     }
     .tittle-all{
-    margin-right: 55px;
+        margin-left: 0;
     font-size: 23px;
-        width: 75%;
+    width: 61%;
         justify-content: center;
     }
     .main-header {
