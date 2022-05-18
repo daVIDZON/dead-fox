@@ -197,7 +197,7 @@ main {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
+    background-image: -webkit-radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
 }
 
 .anim-typewriter {
@@ -655,6 +655,9 @@ footer {
 
 /* For Mobile */
 @media only screen and (max-width: 768px) {
+    .text-of-project-team-back{
+        font-size:10px;
+    }
     .team-block-wrapper{
         margin-left: 0;
     }
