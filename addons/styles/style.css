@@ -846,6 +846,9 @@ overflow: hidden;
 /* For Tablet */
 @media only screen and (min-width: 770px) {
     @supports (-webkit-appearance:none) {
+        .header-menu-backside{
+            display: none;
+        }
         .count-of-icons-text {
             width: 100%;
             height: 25px;
@@ -936,7 +939,9 @@ overflow: hidden;
             border: none;
         }
     }
-
+    .header-menu-backside{
+        display: none;
+    }
     .count-of-icons-text {
         width: 100%;
     }
