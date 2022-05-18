@@ -655,16 +655,21 @@ footer {
 
 /* For Mobile */
 @media only screen and (max-width: 768px) {
+    .test{
+        justify-content: center;
+    }
     .colections-icons{
-        margin-right: 0;
+        margin-right: 15px;
     }
     .invisiable-block_2{
     
         transform: translateY(-120px);
     }
     .tittle-all{
+    margin-right: 55px;
+    font-size: 23px;
         width: 75%;
-        margin:0 auto;
+        justify-content: center;
     }
     .main-header {
         display: none;
@@ -685,7 +690,7 @@ footer {
     }
 .main-text-bg{
     font-size:30px;
-    margin-left:100px;
+    margin-left: 150px;
 }
     .about-us-img {
         display: none;
