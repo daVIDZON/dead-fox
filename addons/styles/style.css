@@ -198,6 +198,9 @@ main {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    background-image: radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
+    background-image: -o-radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
+    background-image: -moz-radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
     background-image: -webkit-radial-gradient(circle, rgba(9, 9, 9, 1) 0%, rgba(246, 0, 0, 1) 52%, rgba(9, 9, 9, 1) 100%);
 }
 
@@ -730,12 +733,15 @@ footer {
 }
 /* For Laptop */
 @media only screen and (min-width: 1200px) {
+    .block_typewriter{
+        width: 600px;
+    }
     .content-bg {
         width: 100%;
         height:500px;
     }
 .main-text-bg{
-    font-size:58px;
+    font-size:70px;
 }
 .colections-icons{
     width: 290px;
@@ -744,6 +750,9 @@ footer {
 }
 /* For Desctop */
 @media only screen and (min-width: 1500px) {
+    .block_typewriter{
+        width: 650px;
+    }
     .content-bg {
         width: 100%;
         height:600px;
