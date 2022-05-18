@@ -197,7 +197,7 @@ main {
     white-space: nowrap;
     overflow: hidden;
     font-size: 80px;
-    color: rgb(151, 12, 12);
+    color: rgb(255, 255, 255);
 }
 
 .anim-typewriter {
@@ -846,10 +846,16 @@ header{
         width: 15%;
         height: 27%;
     }
+    .block-social-networks{
+        width: 15%;
+    }
 }
 
 /* For Desctop */
 @media only screen and (min-width: 1500px) {
+    .block-social-networks{
+        width: 15%;
+    }
     .block_typewriter {
         width: 900px;
     }
