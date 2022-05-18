@@ -655,6 +655,9 @@ footer {
 
 /* For Mobile */
 @media only screen and (max-width: 768px) {
+    .team-block-wrapper{
+        margin-left: 0;
+    }
     .test{
         justify-content: center;
     }
