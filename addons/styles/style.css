@@ -735,12 +735,22 @@ footer {
         .text-about-us {
             font-size: 14px;
         }
+        .block-social-networks{
+            justify-content:space-between;
+        }
+        .twitter{
+            height: 68%;
+        }
     }
 }
 
 /* For Tablet */
 @media only screen and (min-width: 770px) {
     @supports (-webkit-appearance:none) {
+        .count-of-icons-text{
+            width: 100%;
+            height: 25px;
+        }
         .header-menu-text {
             font-size: 20px;
             margin-right:10%;
@@ -783,12 +793,12 @@ footer {
             align-items: flex-end;
         }
         .discord{
-            width: 40%;
+            width: 35%;
             height: 40%;
         }
         .twitter{
-            width: 40%;
-            height: 60%;
+            width: 40%; 
+            height: 55%;
         }
         .learn-more-text{
             font-size: 20px;
@@ -796,6 +806,9 @@ footer {
             align-items: center;
             height: 30%;
 
+        }
+        .block-social-networks{
+            justify-content:space-between;
         }
     }
 }
@@ -812,8 +825,19 @@ footer {
             border: none;
         }
     }
+    .count-of-icons-text{
+        width: 100%;
+    }
 header{
     height: 8%;
+}
+.count-of-icons{
+    margin-left: 33px;
+    height: 30px;
+    width: 100px;
+}
+.avatar-colections-icons{
+    margin-top: 264px;
 }
     .block_typewriter {
         width: 900px;
@@ -849,12 +873,38 @@ header{
     .block-social-networks{
         width: 15%;
     }
+    .name-colection-icons{
+        font-size: 23px;
+        width: 45%;
+    }
 }
 
 /* For Desctop */
 @media only screen and (min-width: 1500px) {
+    .our-team-wrapper{
+        width: 90%;
+    }
+    .team-block-wrapper {
+        height: 18em;
+        width: 500px;
+    }
+    .team-block{
+        height: 18em;
+    }
+    .name-of-project-team{
+        height: 34%;
+        margin-top: 62px;
+    }
+    .text-of-project-team-back{
+        line-height: 35px;
+        padding: 32px;
+        align-items: center;
+        margin-top: 25px;
+        font-size: 18px;
+    }
     .block-social-networks{
         width: 15%;
+        justify-content: space-between;
     }
     .block_typewriter {
         width: 900px;
@@ -879,8 +929,8 @@ header{
     }
 
     .colections-icons {
-        width: 350px;
-        height: 452px;
+        width: 353px;
+    height: 456px;
     }
 
     .main-colection-wrapper {
@@ -917,6 +967,26 @@ header{
     .bg-block-text {
         height: 100%;
         align-items: center;
+    }
+    .name-colection-icons{
+        width: 50%;
+    }
+    .count-of-icons-text{
+        width: 100%;
+        font-size: 20px;
+        
+    }
+    .avatar-colections-icons{
+        margin-top: 326px;
+    margin-left: 7px;
+    }
+    .avatar-colections-icons-img{
+        width: 74%;
+    }
+    .count-of-icons {
+        margin-left: 40px;
+        height: 35px;
+        width: 100px;
     }
 }
 
