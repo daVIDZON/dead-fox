@@ -653,19 +653,79 @@ footer {
     justify-content: center;
 }
 
-.burger-menu-svg{
+.burger-menu-svg {
     width: 100%;
     height: 65%;
     fill: rgb(0, 0, 0);
     margin-top: 8px;
 }
+
+.burger-menu-close {
+    fill: rgb(0, 0, 0);
+    margin-top: 8px;
+    display: none;
+    animation-name:anim-burg-close;
+    margin-left: 13px;
+    margin-bottom: 5px;
+
+}
+.burger-src-active .burger-menu-close {
+    display: flex;
+}
+
+.burger-src-active .burger-menu-svg {
+    display: none;
+}
+a{
+    text-decoration: none;
+}
 .burger-menu-actived{
+    border-left:3px solid rgb(177, 177, 177);;
+    display: flex;
 position: fixed;
 height: 100%;
-width:15%;
+width: 150px;
+justify-content: center;
 right: 0;
-background-color: aqua;
+background-color: rgb(73, 73, 73);;
+animation-name: anim-burg;
+animation-duration: 2s;
+overflow: hidden;
+}
+.header-menu-backside{
+    height: 100%;
+    padding-left: 0;
+}
+.header-menu-text-backside{
+    text-align: center;
+    color: #FFFF;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 1.6px;  
+    margin-top: 70%; 
+    font-size: 30px;
+}
+.center-menu-burger{
+  margin:auto 0;
+    height: 70%;
+    
+}
+@keyframes anim-burg {
+    from {
+        height: 0%;
+    }
 
+    to {
+        height: 100%;
+    }
+}
+@keyframes anim-burg-close {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0%;
+    }
 }
 
 .burger-src{
@@ -678,10 +738,7 @@ background-color: aqua;
     margin-top: 15px;
     background-color: #FFF;
     border-radius: 100px;
-}
-.burger-src:target 
-.burger-menu-actived{
-   
+    z-index: 10;
 }
 /* For Mobile */
 @media only screen and (max-width: 768px) {
