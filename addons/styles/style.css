@@ -701,12 +701,14 @@ overflow: hidden;
     color: #FFFF;
     font-family: 'Koulen', cursive;
     letter-spacing: 1.6px;  
-    margin-top: 70%; 
-    font-size: 30px;
+    margin-top: 83%;
+    font-size: 20px;
 }
 .center-menu-burger{
   margin:auto 0;
-    height: 70%;
+ 
+  height: 76%;
+
     
 }
 @keyframes anim-burg {
