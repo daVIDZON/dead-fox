@@ -331,7 +331,7 @@ main {
 }
 
 .count-of-icons-text {
-    width: 50px;
+    width: 100%;
     height: 17px;
     padding: 2.9px;
     color: #FFF;
@@ -652,18 +652,50 @@ footer {
     width: 25%;
     justify-content: center;
 }
-
+.burger-menu-button{
+    display: none;
+    position: fixed;
+    width: 7.5%;
+    height: 5.5%;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.burger-menu-svg{
+    width: 100%;
+    height: 65%;
+    fill: rgb(0, 0, 0);
+    margin-top: 6px;
+}
+.burger-menu-actived{
+    display: none;
+position: fixed;
+height: 100%;
+width:15%;
+right: 0;
+background-color: aqua;
+}
+.burger-src{
+    background-color: #FFF;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+}
+.burger-src:active 
+.burger-menu-actived{
+    display: block;
+}
 /* For Mobile */
 @media only screen and (max-width: 768px) {
     @supports (-webkit-appearance:none) {
-        .block_typewriter{
-            width:259px;
+        .block_typewriter {
+            width: 259px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .bg-block-text{
+        .bg-block-text {
             width: 100%;
             height: 100%;
             display: flex;
@@ -720,7 +752,7 @@ footer {
 
         .main-text-bg {
             font-size: 30px;
-           width: 300px;
+            width: 300px;
         }
 
         .about-us-img {
@@ -735,11 +767,23 @@ footer {
         .text-about-us {
             font-size: 14px;
         }
-        .block-social-networks{
-            justify-content:space-between;
+
+        .block-social-networks {
+            justify-content: space-between;
         }
-        .twitter{
+
+        .twitter {
             height: 68%;
+        }
+
+        .invisiable-block {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 17.8%;
+        }
+        .burger-menu-button{
+            display: flex;
         }
     }
 }
@@ -747,13 +791,14 @@ footer {
 /* For Tablet */
 @media only screen and (min-width: 770px) {
     @supports (-webkit-appearance:none) {
-        .count-of-icons-text{
+        .count-of-icons-text {
             width: 100%;
             height: 25px;
         }
+
         .header-menu-text {
             font-size: 20px;
-            margin-right:10%;
+            margin-right: 10%;
         }
 
         .header-menu-2 {
@@ -792,23 +837,34 @@ footer {
             height: 100%;
             align-items: flex-end;
         }
-        .discord{
+
+        .discord {
             width: 35%;
             height: 40%;
         }
-        .twitter{
-            width: 40%; 
+
+        .twitter {
+            width: 40%;
             height: 55%;
         }
-        .learn-more-text{
+
+        .learn-more-text {
             font-size: 20px;
             width: 25%;
             align-items: center;
             height: 30%;
 
         }
-        .block-social-networks{
-            justify-content:space-between;
+
+        .block-social-networks {
+            justify-content: space-between;
+        }
+
+        .invisiable-block {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 22.8%;
         }
     }
 }
@@ -819,26 +875,31 @@ footer {
         from {
             width: 0;
         }
-    
+
         to {
             width: 70%;
             border: none;
         }
     }
-    .count-of-icons-text{
+
+    .count-of-icons-text {
         width: 100%;
     }
-header{
-    height: 8%;
-}
-.count-of-icons{
-    margin-left: 33px;
-    height: 30px;
-    width: 100px;
-}
-.avatar-colections-icons{
-    margin-top: 264px;
-}
+
+    header {
+        height: 8%;
+    }
+
+    .count-of-icons {
+        margin-left: 33px;
+        height: 30px;
+        width: 100px;
+    }
+
+    .avatar-colections-icons {
+        margin-top: 264px;
+    }
+
     .block_typewriter {
         width: 900px;
     }
@@ -861,51 +922,69 @@ header{
     .header-menu-text {
         font-size: 20px;
     }
+
     .bg-block-text {
         height: 100%;
         align-items: center;
     }
-    .learn-more-text{
-        font-size: 18px;
+
+    .learn-more-text {
+        font-size: 15px;
+        padding: 10px 20px;
         width: 15%;
         height: 27%;
     }
-    .block-social-networks{
+
+    .block-social-networks {
         width: 15%;
     }
-    .name-colection-icons{
+
+    .name-colection-icons {
         font-size: 23px;
         width: 45%;
+    }
+
+    .invisiable-block {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 42.5%;
     }
 }
 
 /* For Desctop */
 @media only screen and (min-width: 1500px) {
-    .our-team-wrapper{
+    .our-team-wrapper {
         width: 90%;
     }
+
     .team-block-wrapper {
         height: 18em;
         width: 500px;
     }
-    .team-block{
+
+    .team-block {
         height: 18em;
     }
-    .name-of-project-team{
+
+    .name-of-project-team {
         height: 34%;
         margin-top: 62px;
     }
-    .text-of-project-team-back{
+
+    .text-of-project-team-back {
         line-height: 35px;
         padding: 32px;
         align-items: center;
         margin-top: 25px;
         font-size: 18px;
     }
-    .block-social-networks{
+
+    .block-social-networks {
         width: 15%;
         justify-content: space-between;
     }
+
     .block_typewriter {
         width: 900px;
     }
@@ -930,7 +1009,7 @@ header{
 
     .colections-icons {
         width: 353px;
-    height: 456px;
+        height: 456px;
     }
 
     .main-colection-wrapper {
@@ -964,29 +1043,43 @@ header{
         align-items: center;
         height: 70%;
     }
+
     .bg-block-text {
         height: 100%;
         align-items: center;
     }
-    .name-colection-icons{
+
+    .name-colection-icons {
         width: 50%;
     }
-    .count-of-icons-text{
+
+    .count-of-icons-text {
         width: 100%;
         font-size: 20px;
-        
+
     }
-    .avatar-colections-icons{
+
+    .avatar-colections-icons {
         margin-top: 326px;
-    margin-left: 7px;
+        margin-left: 7px;
     }
-    .avatar-colections-icons-img{
+
+    .avatar-colections-icons-img {
         width: 74%;
     }
+
     .count-of-icons {
         margin-left: 40px;
         height: 35px;
         width: 100px;
+    }
+
+
+        .invisiable-block {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 26.8%;
     }
 }
 
@@ -1000,6 +1093,7 @@ header{
         width: 460px;
         height: 588px;
     }
+
     .bg-block-text {
         height: 100%;
         align-items: center;
