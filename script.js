@@ -40,10 +40,10 @@ function main() {
 
 main();
 
-function mobileCard(){
-    const cardMobile=document.querySelector('.team-block-wrapper');
-    cardMobile.addEventListener('touchstart',()=>{
-        cardMobile.add('.mobile-card-rotate');
-    });
-}
-mobileCard();
+// function mobileCard(){
+//     const cardMobile=document.querySelector('.team-block-wrapper');
+//     cardMobile.addEventListener('touchstart',()=>{
+//         cardMobile.add('.mobile-card-rotate');
+//     });
+// }
+// mobileCard();

@@ -237,7 +237,7 @@ main {
 .tittle-all {
     display: flex;
     font-size: 35px;
-    margin-left: 65px;
+    margin-left: 107px;
     padding-top: 20px;
     width: 100%;
     color: rgb(231, 231, 231);
@@ -409,7 +409,7 @@ main {
 .colection-text {
     border: 2px solid rgb(40, 240, 40);
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 25px;
     color: rgb(40, 240, 40);
     text-decoration: none;
     transition-duration: .6s;
@@ -664,11 +664,12 @@ footer {
     -webkit-fill: rgb(0, 0, 0);
     margin-top: 8px;
     display: none;
-    animation-name:anim-burg-close;
+    animation-name: anim-burg-close;
     margin-left: 13px;
     margin-bottom: 5px;
 
 }
+
 .burger-src-active .burger-menu-close {
     display: flex;
 }
@@ -676,54 +677,63 @@ footer {
 .burger-src-active .burger-menu-svg {
     display: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.burger-menu-actived{
-    border-left:3px solid rgb(177, 177, 177);;
+
+.burger-menu-actived {
+    border-left: 3px solid rgb(177, 177, 177);
+    ;
     display: flex;
-position: fixed;
-height: 100%;
-width: 100px;
-justify-content: center;
-right: 0;
-background-color: rgb(42 40 40);
-animation-duration: 2s;
-overflow: hidden;
-animation-name: anim-burg;
-animation-duration: 1s;
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    justify-content: center;
+    right: 0;
+    background-color: rgb(42 40 40);
+    animation-duration: 2s;
+    overflow: hidden;
+    animation-name: anim-burg;
+    animation-duration: 1s;
 }
-.burger-menu-actived-closed{
+
+.burger-menu-actived-closed {
     display: flex;
-position: fixed;
-height: 100%;
-justify-content: center;
-right: 0;
-background-color: rgb(42 40 40);
-animation-duration: 2s;
-overflow: hidden;
+    position: fixed;
+    height: 100%;
+    justify-content: center;
+    right: 0;
+    background-color: rgb(42 40 40);
+    animation-duration: 2s;
+    overflow: hidden;
     animation-name: anim-burg-close;
     animation-duration: 0.7s;
 }
-.header-menu-backside{
+
+.header-menu-backside {
     height: 100%;
     padding-left: 0;
-    display:none;
+    display: none;
 }
-.mobile-card-rotate{
+
+.mobile-card-rotate {
     transform: rotateY(180deg);
 }
-.header-menu-text-backside{
+
+.header-menu-text-backside {
     color: #FFFF;
     font-family: 'Koulen', cursive;
-    letter-spacing: 1.6px;  
+    letter-spacing: 1.6px;
     margin-top: 100%;
     font-size: 15px;
 }
-.center-menu-burger{
-  margin:auto 0;
-  height: 70%;
+
+.center-menu-burger {
+    margin: auto 0;
+    height: 70%;
 }
+
 @keyframes anim-burg {
     from {
         width: 0%;
@@ -733,17 +743,18 @@ overflow: hidden;
         width: 100px;
     }
 }
+
 @keyframes anim-burg-close {
     from {
         width: 100px;
     }
 
     to {
-        width:0;
+        width: 0;
     }
 }
 
-.burger-src{
+.burger-src {
     position: fixed;
     display: none;
     width: 50px;
@@ -755,6 +766,8 @@ overflow: hidden;
     border-radius: 100px;
     z-index: 10;
 }
+
+
 /* For Mobile */
 @media only screen and (max-width: 768px) {
     @supports (-webkit-appearance:none) {
@@ -765,6 +778,7 @@ overflow: hidden;
             justify-content: center;
             align-items: center;
         }
+
         .bg-block-text {
             width: 100%;
             height: 100%;
@@ -772,6 +786,7 @@ overflow: hidden;
             justify-content: center;
             align-items: center;
         }
+
         .text-of-project-team-back {
             font-size: 10px;
         }
@@ -786,6 +801,7 @@ overflow: hidden;
 
         .colections-icons {
             margin-right: 15px;
+            margin-left: 15px;
         }
 
         .invisiable-block_2 {
@@ -795,8 +811,8 @@ overflow: hidden;
 
         .tittle-all {
             margin-left: 0;
-            font-size: 20px;
-            width: 61%;
+            font-size: 28px;
+            width: 100%;
             justify-content: center;
         }
 
@@ -835,15 +851,16 @@ overflow: hidden;
         }
 
         .text-about-us {
-            font-size: 14px;
+            font-size: 20px;
         }
 
         .block-social-networks {
             justify-content: space-between;
+            height: 56%;
         }
 
         .twitter {
-            height: 68%;
+            height: 80%;
         }
 
         .invisiable-block {
@@ -852,16 +869,20 @@ overflow: hidden;
             position: relative;
             transform: translateY(-70px);
         }
-        .burger-src{
+
+        .burger-src {
             display: flex;
         }
-        .learn-more-block{
-            height: 120px;
+
+        .learn-more-block {
+            margin-bottom: 5px;
         }
+
         .footer-text {
-           font-size: 12px;
+            font-size: 12px;
         }
-        .count-of-icons-text{
+
+        .count-of-icons-text {
             font-size: 12px;
         }
     }
@@ -870,12 +891,14 @@ overflow: hidden;
 /* For Tablet */
 @media only screen and (min-width: 770px) {
     @supports (-webkit-appearance:none) {
-        .header-menu-backside{
+        .header-menu-backside {
             display: none;
         }
-        .burger-menu-actived{
+
+        .burger-menu-actived {
             display: none;
         }
+
         .count-of-icons-text {
             width: 100%;
             height: 25px;
@@ -966,9 +989,11 @@ overflow: hidden;
             border: none;
         }
     }
-    .header-menu-backside{
+
+    .header-menu-backside {
         display: none;
     }
+
     .count-of-icons-text {
         width: 100%;
     }
@@ -1162,11 +1187,11 @@ overflow: hidden;
     }
 
 
-        .invisiable-block {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            top: 26.8%;
+    .invisiable-block {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 26.8%;
     }
 }
 
