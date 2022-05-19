@@ -46,3 +46,4 @@ function mobileCard(){
         cardMobile.add('.mobile-card-rotate');
     });
 }
+mobileCard();
