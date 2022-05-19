@@ -855,6 +855,9 @@ overflow: hidden;
         .learn-more-block{
             height: 120px;
         }
+        .footer-text {
+           font-size: 12px;
+        }
     }
 }
 
