@@ -703,7 +703,7 @@ background-color: rgb(42 40 40);
 animation-duration: 2s;
 overflow: hidden;
     animation-name: anim-burg-close;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
 .header-menu-backside{
     height: 100%;
