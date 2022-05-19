@@ -710,6 +710,9 @@ overflow: hidden;
     padding-left: 0;
     display:none;
 }
+.mobile-card-rotate{
+    transform: rotateY(180deg);
+}
 .header-menu-text-backside{
     color: #FFFF;
     font-family: 'Koulen', cursive;
@@ -857,6 +860,9 @@ overflow: hidden;
         }
         .footer-text {
            font-size: 12px;
+        }
+        .count-of-icons-text{
+            font-size: 12px;
         }
     }
 }

@@ -3,7 +3,9 @@ function handleClick() {
     const menu = document.getElementById('menu');
     const burger = document.getElementById('burger');
      const header_backside=document.querySelector('.header-menu-backside');
-   const burgerClosed=document.querySelector('burger-menu-actived');
+
+
+
     const menuHasActiveClass = menu.classList.contains('burger-menu-actived'); 
 
     if(menuHasActiveClass) {
@@ -37,3 +39,10 @@ function main() {
 }
 
 main();
+
+function mobileCard(){
+    const cardMobile=document.querySelector('.team-block-wrapper');
+    cardMobile.addEventListener('touchstart',()=>{
+        cardMobile.add('.mobile-card-rotate');
+    });
+}
