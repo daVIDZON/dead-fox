@@ -684,49 +684,60 @@ a{
     display: flex;
 position: fixed;
 height: 100%;
-width: 150px;
+width: 100px;
 justify-content: center;
 right: 0;
-background-color: rgb(73, 73, 73);;
-animation-name: anim-burg;
+background-color: rgb(42 40 40);
 animation-duration: 2s;
 overflow: hidden;
+animation-name: anim-burg;
+animation-duration: 2s;
+}
+.burger-menu-actived-closed{
+    display: flex;
+position: fixed;
+height: 100%;
+justify-content: center;
+right: 0;
+background-color: rgb(42 40 40);
+animation-duration: 2s;
+overflow: hidden;
+    animation-name: anim-burg-close;
+    animation-duration: 1s;
 }
 .header-menu-backside{
     height: 100%;
     padding-left: 0;
+    display:none;
 }
 .header-menu-text-backside{
     text-align: center;
     color: #FFFF;
     font-family: 'Koulen', cursive;
     letter-spacing: 1.6px;  
-    margin-top: 83%;
-    font-size: 20px;
+    margin-top: 100%;
+    font-size: 15px;
 }
 .center-menu-burger{
   margin:auto 0;
- 
-  height: 76%;
-
-    
+  height: 70%;
 }
 @keyframes anim-burg {
     from {
-        height: 0%;
+        width: 0%;
     }
 
     to {
-        height: 100%;
+        width: 100px;
     }
 }
 @keyframes anim-burg-close {
     from {
-        height: 100%;
+        width: 100px;
     }
 
     to {
-        height: 0%;
+        width:0;
     }
 }
 
@@ -836,11 +847,14 @@ overflow: hidden;
         .invisiable-block {
             width: 50px;
             height: 50px;
-            position: absolute;
-            top: 17.8%;
+            position: relative;
+            transform: translateY(-70px);
         }
         .burger-src{
             display: flex;
+        }
+        .learn-more-block{
+            height: 120px;
         }
     }
 }
@@ -849,6 +863,9 @@ overflow: hidden;
 @media only screen and (min-width: 770px) {
     @supports (-webkit-appearance:none) {
         .header-menu-backside{
+            display: none;
+        }
+        .burger-menu-actived{
             display: none;
         }
         .count-of-icons-text {
