@@ -691,7 +691,7 @@ background-color: rgb(42 40 40);
 animation-duration: 2s;
 overflow: hidden;
 animation-name: anim-burg;
-animation-duration: 2s;
+animation-duration: 1s;
 }
 .burger-menu-actived-closed{
     display: flex;
@@ -711,7 +711,6 @@ overflow: hidden;
     display:none;
 }
 .header-menu-text-backside{
-    text-align: center;
     color: #FFFF;
     font-family: 'Koulen', cursive;
     letter-spacing: 1.6px;  
