@@ -858,7 +858,9 @@ a {
             justify-content: space-between;
             height: 56%;
         }
-
+           .burger-src:hover{
+               cursor:pointer;
+           }
         .twitter {
             height: 80%;
         }
