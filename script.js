@@ -43,7 +43,7 @@ function openFaq() {
     const answear_1 = document.querySelector('.faq-main-text-active-1');
   
     const Answered_1 = answear_1.classList.contains('faq-main-text-active-1');
-  
+
    
     const AnsweredClose = answear_1.classList.contains('faq-hide');
 
@@ -177,52 +177,9 @@ function openFaq6() {
         answear_6.classList.add('faq-hide');   
     }
 }
-function openFaq7() {
-    const answear_7 = document.querySelector('.faq-main-text-active-7');
-   
-    const Answered_7 = answear_7.classList.contains('faq-main-text-active-7');
-  
+
  
-    const AnsweredClose7 = answear_7.classList.contains('faq-hide');
 
-
-    if (Answered_7) {
-        answear_7.classList.add('faq-hide');
-    } else {
-        answear_.classList.remove('faq-hide');
-      
-    }
-
-    if (AnsweredClose7) {
-        answear_7.classList.remove('faq-hide');
-       
-    } else {
-        answear_7.classList.add('faq-hide');   
-    }
-}
-function openFaq8() {
-    const answear_8 = document.querySelector('.faq-main-text-active-8');
-   
-    const Answered_8 = answear_8.classList.contains('faq-main-text-active-8');
-  
- 
-    const AnsweredClose8 = answear_8.classList.contains('faq-hide');
-
-
-    if (Answered_8) {
-        answear_8.classList.add('faq-hide');
-    } else {
-        answear_8.classList.remove('faq-hide');
-      
-    }
-
-    if (AnsweredClose8) {
-        answear_8.classList.remove('faq-hide');
-       
-    } else {
-        answear_8.classList.add('faq-hide');   
-    }
-}
 function FaqClick() {
     const question1 = document.querySelector('.faq-block-text-1');
     const question2 = document.querySelector('.faq-block-text-2');
@@ -230,9 +187,7 @@ function FaqClick() {
     const question4 = document.querySelector('.faq-block-text-4');
     const question5 = document.querySelector('.faq-block-text-5');
     const question6 = document.querySelector('.faq-block-text-6');
-    const question7 = document.querySelector('.faq-block-text-7');
-    const question8 = document.querySelector('.faq-block-text-8');
-   
+    
 
     question1.addEventListener('click', openFaq);
     question2.addEventListener('click', openFaq2);
@@ -240,9 +195,10 @@ function FaqClick() {
     question4.addEventListener('click', openFaq4);
     question5.addEventListener('click', openFaq5);
     question6.addEventListener('click', openFaq6);
-    question7.addEventListener('click', openFaq7);
-    question8.addEventListener('click', openFaq8);
+    
 
 }
 
 FaqClick();
+
+
